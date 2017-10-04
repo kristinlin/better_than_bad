@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Echo </title>
+  </head>
+  <body>
+    {% block content1 %}
+    <form method = 'POST' action = "/result">
+      Enter username: <input type = "text" name = "data">
+      <br><br>
+      <input type = "submit" value = "Submit">
+    </form>
+    {% endblock %}
+  </body>
+</html>
+

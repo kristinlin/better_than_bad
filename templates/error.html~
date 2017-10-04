@@ -1,0 +1,11 @@
+{% extends "root.html" %}
+
+{% block title %}
+Error
+{% endblock %}
+
+{% block content1 %}
+<h2> Username: {{user}} <br>
+  Request method used: {{method}} </h2>
+<h1> Welcome! </h1>
+{% endblock %}
