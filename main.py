@@ -39,9 +39,8 @@ def requests():
         return render_template("result.html", usr = usr)
     #else send to error page, with booleans for password and username
     else:
-        cUsr = (usr == 'softdev')
-        cPwd = (pwd == 'pd09')
-        return render_template("error.html", cUsr = cUsr, cPwd = cPwd)
+        return render_template("error.html", cUsr = (usr == 'softdev'),
+        cPwd = (pwd == 'pd09'))
 
 #logout route
 @form.route('/logout', methods = ['POST', 'GET'])
