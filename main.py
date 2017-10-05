@@ -24,6 +24,9 @@ def root():
 #Correct password: pd09
 @form.route('/result', methods = ['POST', 'GET'])
 def requests():
+    #are you logged in already?
+    if login:
+        return render_template("result.html", usr = session['usr'])
     #either POST or GET method
     if request.method == 'POST':
         usr = request.form["usr"]
