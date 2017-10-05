@@ -6,12 +6,13 @@ Error
 
 {% block content1 %}
 <h1>Try again.</h1> <br>
-{{cUser}}
-<!--{% if not {{cUsr}} %}
-Wrong username.
+
+{% if not cUsr %}
+Wrong username. <br>
 {% endif %}
-{% else %}
-Wrong password.
+{% if not cPwd %}
+Wrong password. <br>
 {% endif %}
-!-->
+
+
 {% endblock %}
